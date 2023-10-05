@@ -1,6 +1,516 @@
 version: "1.0"
 info:
   model: int-scaffold
+services:
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.473
+- serviceName: edge.nl_mihe_bnlxdemo.integrations:HelloWorld
+  packages:
+  - name: EdgeNL_MIHE_BNLXDemo
+    version: "1.0"
+  configurations:
+  - name: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE
+    properties:
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.keyStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.transactionType
+      value: NO_TRANSACTION
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.password
+      value: "{AES}u06L2LSyGLvolh3XN/iy8Q=="
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.driverType
+      value: Progress® DataDirect®
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.datasourceClass
+      value: com.wm.dd.jdbcx.oracle.OracleDataSource
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.poolable
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.startupRetryCount
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.trustStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.maximumPoolSize
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.serverName
+      value: host.docker.internal
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.networkProtocol
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.startupBackoffSecs
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.dbType
+      value: ORACLE
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionEnabled
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.poolIncrementSize
+      value: "1"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.blockingTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.expireTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.databaseName
+      value: XEPDB1
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.heartBeatInterval
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.minimumPoolSize
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.portNumber
+      value: "1521"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.user
+      value: wmadmin
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.otherProperties
+      value: loginTimeout=60;
+  - name: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql
+    properties:
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.password
+      value: "{AES}Y5IgMqjfvkgbg7p5VUZztw=="
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.poolable
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionEnabled
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.heartBeatInterval
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.blockingTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.keyStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.serverName
+      value: 192.168.25.5
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.datasourceClass
+      value: org.postgresql.ds.PGSimpleDataSource
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.transactionType
+      value: NO_TRANSACTION
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.maximumPoolSize
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.poolIncrementSize
+      value: "1"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.user
+      value: webMethods
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.startupRetryCount
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.networkProtocol
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.databaseName
+      value: cdcatalog
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.minimumPoolSize
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.driverType
+      value: PostgresQL
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.expireTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.dbType
+      value: POSTGRESQL
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.portNumber
+      value: "5432"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.startupBackoffSecs
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.trustStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.otherProperties
+      value: loginTimeout=60;
+- serviceName: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:OracleXE
+  packages:
+  - name: EdgeNL_MIHE_BNLXDemo
+    version: "1.0"
+  configurations:
+  - name: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE
+    properties:
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.keyStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.transactionType
+      value: NO_TRANSACTION
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.password
+      value: "{AES}u06L2LSyGLvolh3XN/iy8Q=="
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.driverType
+      value: Progress® DataDirect®
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.datasourceClass
+      value: com.wm.dd.jdbcx.oracle.OracleDataSource
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.poolable
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.startupRetryCount
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.trustStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.maximumPoolSize
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.serverName
+      value: host.docker.internal
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.networkProtocol
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.startupBackoffSecs
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.dbType
+      value: ORACLE
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionEnabled
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.poolIncrementSize
+      value: "1"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.blockingTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.expireTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.databaseName
+      value: XEPDB1
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.heartBeatInterval
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.minimumPoolSize
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.portNumber
+      value: "1521"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.user
+      value: wmadmin
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.otherProperties
+      value: loginTimeout=60;
+  - name: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql
+    properties:
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.password
+      value: "{AES}Y5IgMqjfvkgbg7p5VUZztw=="
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.poolable
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionEnabled
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.heartBeatInterval
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.blockingTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.keyStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.serverName
+      value: 192.168.25.5
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.datasourceClass
+      value: org.postgresql.ds.PGSimpleDataSource
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.transactionType
+      value: NO_TRANSACTION
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.maximumPoolSize
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.poolIncrementSize
+      value: "1"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.user
+      value: webMethods
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.startupRetryCount
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.networkProtocol
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.databaseName
+      value: cdcatalog
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.minimumPoolSize
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.driverType
+      value: PostgresQL
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.expireTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.dbType
+      value: POSTGRESQL
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.portNumber
+      value: "5432"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.startupBackoffSecs
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.trustStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.otherProperties
+      value: loginTimeout=60;
+- serviceName: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Postgresql
+  packages:
+  - name: EdgeNL_MIHE_BNLXDemo
+    version: "1.0"
+  configurations:
+  - name: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE
+    properties:
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.keyStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.transactionType
+      value: NO_TRANSACTION
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.password
+      value: "{AES}u06L2LSyGLvolh3XN/iy8Q=="
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.driverType
+      value: Progress® DataDirect®
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.datasourceClass
+      value: com.wm.dd.jdbcx.oracle.OracleDataSource
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.poolable
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.startupRetryCount
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.trustStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.maximumPoolSize
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.serverName
+      value: host.docker.internal
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.networkProtocol
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.startupBackoffSecs
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.dbType
+      value: ORACLE
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionEnabled
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.poolIncrementSize
+      value: "1"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.blockingTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.expireTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.databaseName
+      value: XEPDB1
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.heartBeatInterval
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.minimumPoolSize
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.portNumber
+      value: "1521"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.user
+      value: wmadmin
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.otherProperties
+      value: loginTimeout=60;
+  - name: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql
+    properties:
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.password
+      value: "{AES}Y5IgMqjfvkgbg7p5VUZztw=="
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.poolable
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionEnabled
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.heartBeatInterval
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.blockingTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.keyStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.serverName
+      value: 192.168.25.5
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.datasourceClass
+      value: org.postgresql.ds.PGSimpleDataSource
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.transactionType
+      value: NO_TRANSACTION
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.maximumPoolSize
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.poolIncrementSize
+      value: "1"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.user
+      value: webMethods
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.startupRetryCount
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.networkProtocol
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.databaseName
+      value: cdcatalog
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.minimumPoolSize
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.driverType
+      value: PostgresQL
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.expireTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.dbType
+      value: POSTGRESQL
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.portNumber
+      value: "5432"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.startupBackoffSecs
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.trustStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.otherProperties
+      value: loginTimeout=60;
+- serviceName: edge.nl_mihe_bnlxdemo.integrations:insertCDinCatalog
+  packages:
+  - name: EdgeNL_MIHE_BNLXDemo
+    version: "1.0"
+  configurations:
+  - name: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE
+    properties:
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.keyStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.expireTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.serverName
+      value: host.docker.internal
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.transactionType
+      value: NO_TRANSACTION
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.databaseName
+      value: XEPDB1
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.networkProtocol
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.startupBackoffSecs
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.password
+      value: "{AES}u06L2LSyGLvolh3XN/iy8Q=="
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.dbType
+      value: ORACLE
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.driverType
+      value: Progress® DataDirect®
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.portNumber
+      value: "1521"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.heartBeatInterval
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.datasourceClass
+      value: com.wm.dd.jdbcx.oracle.OracleDataSource
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.user
+      value: wmadmin
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionEnabled
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.poolable
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.poolIncrementSize
+      value: "1"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.otherProperties
+      value: loginTimeout=60;
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.startupRetryCount
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.trustStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.maximumPoolSize
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.minimumPoolSize
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.blockingTimeout
+      value: "1000"
+  - name: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql
+    properties:
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.portNumber
+      value: "5432"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.serverName
+      value: 192.168.25.5
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.poolIncrementSize
+      value: "1"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.user
+      value: webMethods
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.startupRetryCount
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.datasourceClass
+      value: org.postgresql.ds.PGSimpleDataSource
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.networkProtocol
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.transactionType
+      value: NO_TRANSACTION
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.databaseName
+      value: cdcatalog
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.minimumPoolSize
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.password
+      value: "{AES}Y5IgMqjfvkgbg7p5VUZztw=="
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.startupBackoffSecs
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.poolable
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.maximumPoolSize
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.driverType
+      value: PostgresQL
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionEnabled
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.heartBeatInterval
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.blockingTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.trustStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.keyStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.expireTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.dbType
+      value: POSTGRESQL
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.otherProperties
+      value: loginTimeout=60;
+- serviceName: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertCD
+  packages:
+  - name: EdgeNL_MIHE_BNLXDemo
+    version: "1.0"
+  configurations:
+  - name: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE
+    properties:
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.keyStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.expireTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.serverName
+      value: host.docker.internal
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.transactionType
+      value: NO_TRANSACTION
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.databaseName
+      value: XEPDB1
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.networkProtocol
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.startupBackoffSecs
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.password
+      value: "{AES}u06L2LSyGLvolh3XN/iy8Q=="
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.dbType
+      value: ORACLE
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.driverType
+      value: Progress® DataDirect®
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.portNumber
+      value: "1521"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.heartBeatInterval
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.datasourceClass
+      value: com.wm.dd.jdbcx.oracle.OracleDataSource
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.user
+      value: wmadmin
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionEnabled
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.poolable
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.poolIncrementSize
+      value: "1"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.otherProperties
+      value: loginTimeout=60;
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.startupRetryCount
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionSettings.trustStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.maximumPoolSize
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.minimumPoolSize
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.OracleXE.connectionManagerSettings.blockingTimeout
+      value: "1000"
+  - name: edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql
+    properties:
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.portNumber
+      value: "5432"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.serverName
+      value: 192.168.25.5
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.poolIncrementSize
+      value: "1"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.user
+      value: webMethods
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.startupRetryCount
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.datasourceClass
+      value: org.postgresql.ds.PGSimpleDataSource
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.networkProtocol
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.transactionType
+      value: NO_TRANSACTION
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.databaseName
+      value: cdcatalog
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.minimumPoolSize
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.password
+      value: "{AES}Y5IgMqjfvkgbg7p5VUZztw=="
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.startupBackoffSecs
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.poolable
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.maximumPoolSize
+      value: "10"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.driverType
+      value: PostgresQL
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionEnabled
+      value: "false"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.heartBeatInterval
+      value: "0"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.blockingTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.trustStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.keyStore
+      value: ""
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionManagerSettings.expireTimeout
+      value: "1000"
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.dbType
+      value: POSTGRESQL
+    - name: artConnection.EdgeNL_MIHE_BNLXDemo.edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Postgresql.connectionSettings.otherProperties
+      value: loginTimeout=60;
 packages:
 - name: EdgeNL_MIHE_BNLXDemo
   gitServerName: NL_MIHE_Github

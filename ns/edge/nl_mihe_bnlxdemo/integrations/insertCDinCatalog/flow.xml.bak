@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="1.0" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="edge.nl_mihe_bnlxdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:insertCD" VALIDATE-IN="" VALIDATE-OUT="">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/cd;2;0/name;1;0" TO="/insertCDInput;2;0/title;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/cd;2;0/artist;1;0" TO="/insertCDInput;2;0/artist;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/cd;2;0/year;1;0" TO="/insertCDInput;2;0/year;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/cd;2;0/publisher;1;0" TO="/insertCDInput;2;0/publisher;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/cd;2;0/price;1;0" TO="/insertCDInput;2;0/price;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+</MAP>
+</INVOKE>
+</FLOW>
